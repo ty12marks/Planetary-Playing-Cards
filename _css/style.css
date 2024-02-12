@@ -1,0 +1,13 @@
+/* _css/style.css */
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .planet-card {
+    /* Add styling for the planet card */
+  }
+  
+  /* Add other styling, custom properties, and hover effects as needed */
+  
