@@ -1,51 +1,18 @@
 ---
-layout: default
+layout: main-layout.njk
+title: "My Planetary Playing Cards"
 ---
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planetary Playing Cards</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+# Welcome to My Planetary Playing Cards Showcase
 
-<body>
-    <header>
-        <h1>Planetary Playing Cards</h1>
-    </header>
-    <main>
-        <section class="planet-card">
-            <div class="planet-avatar sun">G2V</div>
-            <h2>Sun</h2>
-            <p>Type: G2V</p>
-        </section>
-        <section class="planet-card">
-            <div class="planet-avatar mercury"></div>
-            <h2>Mercury</h2>
-            <p>Astronomical Unit: 0.39 AU</p>
-        </section>
-        <section class="planet-card">
-            <div class="planet-avatar venus"></div>
-            <h2>Venus</h2>
-            <p>Astronomical Unit: 0.72 AU</p>
-        </section>
-        <section class="planet-card">
-            <div class="planet-avatar earth"></div>
-            <h2>Earth</h2>
-            <p>Astronomical Unit: 1.00 AU</p>
-        </section>
-        <section class="planet-card">
-            <div class="planet-avatar mars"></div>
-            <h2>Mars</h2>
-            <p>Astronomical Unit: 1.52 AU</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2022 Planetary Playing Cards</p>
-    </footer>
-</body>
-
-</html>
+<div class="planet-cards">
+  {% include "planet-card.njk" with { planetName: "Sun", astronomicalUnit: "Type: G2V" } %}
+  {% include "planet-card.njk" with { planetName: "Mercury", astronomicalUnit: "0.39 AU" } %}
+  {% include "planet-card.njk" with { planetName: "Venus", astronomicalUnit: "0.72 AU" } %}
+  {% include "planet-card.njk" with { planetName: "Earth", astronomicalUnit: "1 AU" } %}
+  {% include "planet-card.njk" with { planetName: "Mars", astronomicalUnit: "1.52 AU" } %}
+  {% include "planet-card.njk" with { planetName: "Jupiter", astronomicalUnit: "5.20 AU" } %}
+  {% include "planet-card.njk" with { planetName: "Saturn", astronomicalUnit: "9.58 AU" } %}
+  {% include "planet-card.njk" with { planetName: "Uranus", astronomicalUnit: "19.22 AU" } %}
+  {% include "planet-card.njk" with { planetName: "Neptune", astronomicalUnit: "30.05 AU" } %}
+</div>
