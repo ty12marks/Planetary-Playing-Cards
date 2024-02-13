@@ -1,17 +1,17 @@
- ---
+---
 layout: main-layout.njk
 ---
 
 # Welcome to My Planetary Playing Cards Showcase
 
 <div class="planet-cards">
-  {% include "planet-card.njk" with { planetName: "Sun", astronomicalUnit: "N/A" } %}
-  {% include "planet-card.njk" with { planetName: "Mercury", astronomicalUnit: "0.39 AU" } %}
-  {% include "planet-card.njk" with { planetName: "Venus", astronomicalUnit: "0.72 AU" } %}
-  {% include "planet-card.njk" with { planetName: "Earth", astronomicalUnit: "1 AU" } %}
-  {% include "planet-card.njk" with { planetName: "Mars", astronomicalUnit: "1.52 AU" } %}
-  {% include "planet-card.njk" with { planetName: "Jupiter", astronomicalUnit: "5.20 AU" } %}
-  {% include "planet-card.njk" with { planetName: "Saturn", astronomicalUnit: "9.58 AU" } %}
-  {% include "planet-card.njk" with { planetName: "Uranus", astronomicalUnit: "19.22 AU" } %}
-  {% include "planet-card.njk" with { planetName: "Neptune", astronomicalUnit: "30.05 AU" } %}
+  {% include "planet-card.njk" with { planetName: "Sun", planetDescription: "Type: G2V" } %}
+  {% include "planet-card.njk" with { planetName: "Mercury", planetDescription: "Closest planet to the Sun" } %}
+  {% include "planet-card.njk" with { planetName: "Venus", planetDescription: "Known for its bright appearance" } %}
+  {% include "planet-card.njk" with { planetName: "Earth", planetDescription: "Our home planet" } %}
+  {% include "planet-card.njk" with { planetName: "Mars", planetDescription: "The Red Planet" } %}
+  {% include "planet-card.njk" with { planetName: "Jupiter", planetDescription: "Largest planet in our solar system" } %}
+  {% include "planet-card.njk" with { planetName: "Saturn", planetDescription: "Known for its beautiful rings" } %}
+  {% include "planet-card.njk" with { planetName: "Uranus", planetDescription: "Rotates on its side" } %}
+  {% include "planet-card.njk" with { planetName: "Neptune", planetDescription: "Farthest planet from the Sun" } %}
 </div>
