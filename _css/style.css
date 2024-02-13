@@ -1,70 +1,45 @@
-/* _css/style.css */
 :root {
-  --planet-radius: 50px; /* Adjust as needed */
-  --planet-gap: 20px;
+  --primary-color: #3F51B5;
+  --secondary-color: #00BCD4;
+  --planet-size: 100px;
 }
 
 body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: var(--planet-gap);
+  gap: 20px;
+  padding: 20px;
 }
 
 .planet-card {
-  border: 1px solid #ccc;
+  background-color: var(--secondary-color);
   padding: 20px;
+  border-radius: 50%;
   text-align: center;
-  border-radius: 10px;
-  transition: transform 0.2s;
 }
-
-/* Colors for planet avatars */
-.planet-card:nth-child(1) .planet-avatar {
-  background-color: #ffcc00; /* Sun */
-}
-
-.planet-card:nth-child(2) .planet-avatar {
-  background-color: #eda82c; /* Mercury */
-}
-
-.planet-card:nth-child(3) .planet-avatar {
-  background-color: #3a84fd; /* Venus */
-}
-
-.planet-card:nth-child(4) .planet-avatar {
-  background-color: #ff5733; /* Earth */
-}
-
-.planet-card:nth-child(5) .planet-avatar {
-  background-color: #ffa07a; /* Mars */
-}
-
-.planet-card:nth-child(6) .planet-avatar {
-  background-color: #e3c57b; /* Jupiter */
-}
-
-.planet-card:nth-child(7) .planet-avatar {
-  background-color: #66a5ad; /* Saturn */
-}
-
-.planet-card:nth-child(8) .planet-avatar {
-  background-color: #436f8e; /* Uranus */
-}
-
-.planet-card:nth-child(9) .planet-avatar {
-  background-color: #4674ba; /* Neptune */
-}
-
-/* Add similar styling for other planets */
 
 .planet-avatar {
-  border-radius: var(--planet-radius);
-  width: calc(var(--planet-radius) * 2);
-  height: calc(var(--planet-radius) * 2);
+  width: var(--planet-size);
+  height: var(--planet-size);
+  background-color: gray; /* Change color as needed */
+  border-radius: 50%;
   margin: 0 auto 10px;
 }
 
-/* Add hover effect */
-.planet-card:hover {
-  transform: scale(1.05);
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
