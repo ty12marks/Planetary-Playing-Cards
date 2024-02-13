@@ -1,10 +1,5 @@
-<!-- _includes/planet-card.njk -->
----
-layout: main-layout.njk
----
-
-<div class="planet-card">
-  <div class="planet-avatar"></div>
-  <h2 class="planet-name">{{ planetName }}</h2>
-  <p>{{ planetDescription }}</p>
-</div>
+<section class="planet-card">
+    <div class="planet-avatar {{ data.split('|')[2] }}">{{ data.split('|')[1] }}</div>
+    <h2>{{ data.split('|')[0] }}</h2>
+    <p>Astronomical Unit: {{ data.split('|')[1] }}</p>
+</section>
