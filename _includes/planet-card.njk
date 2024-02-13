@@ -7,6 +7,9 @@ layout: main-layout.njk
   <div class="planet-avatar-container">
     <div class="planet-avatar" style="background: linear-gradient(to bottom, #ff6600, #ff9900);"></div>
   </div>
-  <h2>{{ planetName }}</h2>
-  <p>Astronomical Unit: {{ astronomicalUnit }}</p>
+  <div class="card-content">
+    <h2>{{ planetName }}</h2>
+    <p class="au-label">Astronomical Unit:</p>
+    <p class="au-value">{{ astronomicalUnit }}</p>
+  </div>
 </div>
