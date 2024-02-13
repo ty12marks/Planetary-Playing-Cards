@@ -52,4 +52,15 @@ body {
   }
   
   /* Add similar styling for other planets */
+  /* _css/style.css */
+/* ... existing styles ... */
+
+.planet-avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  /* ... existing styles ... */
   
