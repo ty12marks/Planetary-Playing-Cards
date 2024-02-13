@@ -1,43 +1,43 @@
 /* _css/style.css */
 body {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .planet-card {
-    border: 1px solid #ccc;
-    overflow: hidden;
-    transition: transform 0.2s;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-content {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .planet-avatar {
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(to bottom, #ff6600, #ff9900);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  
-  h2 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .au-label,
-  .au-value {
-    margin: 0;
-  }
-  
-  /* Hover effect */
-  .planet-card:hover {
-    transform: scale(1.05);
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.planet-card {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  transition: transform 0.2s;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.planet-avatar {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, #ff6600, #ff9900);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.au-label,
+.au-value {
+  margin: 0;
+}
+
+/* Hover effect */
+.planet-card:hover {
+  transform: scale(1.05);
+}
+ 
