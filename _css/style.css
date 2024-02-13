@@ -7,7 +7,18 @@ body {
   
   .planet-card {
     /* Add styling for the planet card */
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
   }
   
-  /* Add other styling, custom properties, and hover effects as needed */
+  .planet-avatar {
+    /* Add styling for the planet avatar */
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+  }
   
