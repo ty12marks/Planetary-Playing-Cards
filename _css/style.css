@@ -5,6 +5,12 @@ body {
     gap: 20px;
   }
   
+  .planet-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
   .planet-card {
     /* Add styling for the planet card */
     border: 1px solid #ccc;
