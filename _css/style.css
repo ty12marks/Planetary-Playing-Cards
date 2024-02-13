@@ -5,26 +5,27 @@ body {
     gap: 20px;
   }
   
-  .planet-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
   .planet-card {
-    /* Add styling for the planet card */
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
   }
   
   .planet-avatar {
-    /* Add styling for the planet avatar */
-    background-color: #3498db;
-    color: #fff;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin: 0 auto 10px;
   }
+  
+  /* Styling for individual planets */
+  .planet-card:nth-child(odd) .planet-avatar {
+    background: linear-gradient(to bottom, #ff6600, #ff9900); /* Custom gradient for odd planets */
+  }
+  
+  .planet-card:nth-child(even) .planet-avatar {
+    background: linear-gradient(to bottom, #3366cc, #3399ff); /* Custom gradient for even planets */
+  }
+  
+  /* Add similar styling for other planets */
   

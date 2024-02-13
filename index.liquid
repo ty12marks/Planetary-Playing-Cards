@@ -5,6 +5,7 @@ layout: main-layout.njk
 # Welcome to My Planetary Playing Cards Showcase
 
 <div class="planet-cards">
+  {% include "planet-card.njk" with { planetName: "Sun", astronomicalUnit: "N/A" } %}
   {% include "planet-card.njk" with { planetName: "Mercury", astronomicalUnit: "0.39 AU" } %}
   {% include "planet-card.njk" with { planetName: "Venus", astronomicalUnit: "0.72 AU" } %}
   {% include "planet-card.njk" with { planetName: "Earth", astronomicalUnit: "1 AU" } %}
