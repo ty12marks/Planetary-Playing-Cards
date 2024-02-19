@@ -3,7 +3,7 @@ layout: main-layout.njk
 title: "My Planetary Playing Cards"
 ---
 
-# Welcome to My Planetary Playing Cards Showcase
+Welcome to My Planetary Playing Cards Showcase
 
 <div class="planet-cards">
   {% include "planet-card.njk" with { planetName: "Sun", astronomicalUnit: "Type: G2V" } %}
