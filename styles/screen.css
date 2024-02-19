@@ -1,50 +1,74 @@
+/* _css/style.css */
+:root {
+  --planet-radius: 70px; /* Adjust as needed */
+  --planet-gap: 20px;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--planet-gap);
+  justify-content: center; /* Center items horizontally */
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
+.planet-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  color: #333; /* Font color for planet names */
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+/* Colors for planet avatars */
+.planet-card:nth-child(1) .planet-avatar {
+  background-color: #ffcc00; /* Sun */
+  width: calc(var(--planet-radius) * 4);
+  height: calc(var(--planet-radius) * 4);
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+.planet-card:nth-child(2) .planet-avatar {
+  background-color: #eda82c; /* Mercury */
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+.planet-card:nth-child(3) .planet-avatar {
+  background-color: #3a84fd; /* Venus */
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+.planet-card:nth-child(4) .planet-avatar {
+  background-color: #ff5733; /* Earth */
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.planet-card:nth-child(5) .planet-avatar {
+  background-color: #ffa07a; /* Mars */
 }
 
-img.about {
-    opacity: 0.5;
+.planet-card:nth-child(6) .planet-avatar {
+  background-color: #e3c57b; /* Jupiter */
+}
+
+.planet-card:nth-child(7) .planet-avatar {
+  background-color: #66a5ad; /* Saturn */
+}
+
+.planet-card:nth-child(8) .planet-avatar {
+  background-color: #436f8e; /* Uranus */
+}
+
+.planet-card:nth-child(9) .planet-avatar {
+  background-color: #4674ba; /* Neptune */
+}
+
+/* Add similar styling for other planets */
+
+.planet-avatar {
+  border-radius: var(--planet-radius);
+  width: calc(var(--planet-radius) * 2);
+  height: calc(var(--planet-radius) * 2);
+  margin: 0 auto 10px;
+}
+
+/* Add hover effect */
+.planet-card:hover {
+  transform: scale(1.05);
 }
